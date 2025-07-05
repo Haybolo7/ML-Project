@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loan Result - Smart Lender</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <img src="../static/assets/logo.png" alt="Smart Lender Logo" class="logo">
+            <span class="tagline">AI-powered Loan Approval Predictor</span>
+        </div>
+    </nav>
+
+    <!-- Result Content -->
+    <div class="result-page">
+        <div class="result-card">
+            {% if status == "Approved" %}
+                <img src="../static/assets/approved.png" alt="Approved Icon" class="result-icon">
+                <h2>Congratulations!</h2>
+                <p>Your loan is <strong>likely to be approved</strong> based on the information provided.</p>
+            {% else %}
+                <img src="../static/assets/rejected.png" alt="Rejected Icon" class="result-icon">
+                <h2>We're Sorry</h2>
+                <p>Based on your inputs, the system predicts your loan might be <strong>rejected</strong>.</p>
+            {% endif %}
+
+            <a href="/" class="btn">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Smart Lender. All rights reserved.
+    </footer>
+
+</body>
+</html>

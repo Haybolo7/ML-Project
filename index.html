@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Lender - Home</title>
+  <link rel="stylesheet" href="../static/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-content">
+      <img src="../static/assets/logo.png" alt="Smart Lender Logo" class="logo" />
+      <span class="tagline">Applicant Credibility Prediction for Loan Approval</span>
+      <!-- Applicant Credibility Prediction for Loan Approval
+      AI-powered Loan Approval Predictor -->
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="info-section">
+      <div class="description">
+        <h2>Why Smart Lender?</h2>
+        <p>
+          Smart Lender is designed to simplify your loan approval process using machine learning.
+          We analyze key application features — income, credit history, loan amount, and more — 
+          to predict approval chances instantly and accurately.
+        </p>
+        <p>
+          Whether you're a customer or a bank representative, our tool empowers you with quick insights, 
+          reducing uncertainty and helping make confident decisions.
+        </p>
+      </div>
+
+      <div class="hero-image">
+        <img src="../static/assets/illustration.png" alt="Loan illustration" />
+      </div>
+    </div>
+
+    <div class="cta">
+      <a href="{{ url_for('form') }}" class="btn">Get Started</a>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Smart Lender. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

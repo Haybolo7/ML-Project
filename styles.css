@@ -1,0 +1,256 @@
+/*--------------- GLOBAL STYLES ---------------*/
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*-------------- HOMEPAGE ---------------------*/
+/* Navbar */
+.navbar {
+  background-color: #004aad;
+  padding: 15px 30px;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.logo {
+  height: 40px;
+  filter: drop-shadow(0 0 2.5px rgb(3, 87, 204))
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Main Content Layout */
+.main-content {
+  padding: 40px 30px;
+}
+
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.description {
+  flex: 1;
+  max-width: 550px;
+}
+
+.description h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #004aad;
+}
+
+.description p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Image beside description */
+.hero-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* CTA Button */
+.cta {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 1.5rem;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #003080;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #eee;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: auto;
+}
+
+
+
+/*----------------- FORM PAGE -----------------*/
+/* Form Section */
+/* Form Page Layout */
+.form-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 30px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.form-image {
+    margin-top: 5rem;
+    flex: 1;
+    max-width: 500px;
+}
+
+.form-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin: 5rem 0rem;
+}
+
+.form-section {
+  background-color: white;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  color: #004aad;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Each input group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #222;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #004aad;
+  outline: none;
+}
+
+/* Button Centered */
+form .cta {
+  text-align: center;
+}
+
+form .btn {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: #004aad;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .btn:hover {
+  background-color: #003080;
+}
+
+
+
+/*------------- SUBMIT PAGE -------------*/
+.result-page {
+    min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 50px 20px;
+}
+
+.result-card {
+  text-align: center;
+  max-width: 600px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.result-icon {
+  height: 100px;
+  margin-bottom: 20px;
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.result-card h2 {
+  font-size: 1.8rem;
+  color: #004aad;
+  margin-bottom: 15px;
+}
+
+.result-card p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
